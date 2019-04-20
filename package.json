@@ -1,0 +1,11 @@
+{
+  "name": "spartans-start",
+  "version": "1.0.0",
+  "description": "The starter project folder for Spartans AI",
+  "main": "server/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lazar Vasic",
+  "license": "ISC"
+}
