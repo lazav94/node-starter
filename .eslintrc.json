@@ -1,6 +1,8 @@
 {
   "env": {
     "node": true
+    // "browser": true,
+    // "jquery": true
   },
   "extends": ["airbnb-base"],
   "parserOptions": {
@@ -12,7 +14,7 @@
   "rules": {
     "no-unused-vars": "warn",
     "require-jsdoc": "off",
-    "no-console": "off",
+    "no-console": "warn",
     "new-cap": "off",
     "indent": ["error", 2],
     "camelcase": "off",
@@ -29,20 +31,13 @@
     "no-param-reassign": "off",
     "arrow-body-style": ["error", "as-needed"],
     "no-plusplus": "off",
-    "no-use-before-define": ["error", {
-      "functions": false,
-      "classes": true,
-      "variables": true
-    }],
     "no-await-in-loop": "warn",
     "func-names": ["warn", "never"],
     "no-return-assign": "warn",
     "comma-dangle": ["error", {
       "functions": "ignore"
     }],
-    "consistent-return": "off",
     "no-lonley-if": "off",
-    "arrow-parens": "off",
     "object-curly-newline": ["error", {
       "ObjectExpression": "always",
       "ObjectPattern": {
@@ -53,6 +48,13 @@
         "multiline": true,
         "minProperties": 3
       }
-    }]
+    }],
+    "no-use-before-define": ["error", {
+      "functions": true,
+      "classes": true,
+      "variables": true
+    }],
+    "consistent-return": "warn",
+    "arrow-parens": "off"
   }
 }
