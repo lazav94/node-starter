@@ -4,33 +4,6 @@
      alt="Markdown Monster icon"
      style="align-item:center; width: 350px; maring-bottom:25px; "/>
 
-- Syncronized vs. Asyncronized?
-- OOP vs. Node.js?
-- What are the promises? Resolve Reject? Callback?
-- Where not to use async/await?
-- V8, Call Stack, Node APIs, Callback Queue, Event Loop
-
----
-
-1. Callback example:
-
-```javascript
-fs.readFile("file1.txt", (err, data) => {
-  if (err) throw new Error(err);
-  console.log(data);
-  console.log("Nisi lerdi ako nemas gicu");
-});
-
-console.log("Ona mala je ko kamen");
-```
-
-2. Promise example:
-
-```javascript
-const data = await fs.readFileSync("file1.txt");
-console.log(data);
-console.log("Nisi lerdi ako nemas gicu");
-```
 
 ## 📔 Most used Node.js modules
 
@@ -57,7 +30,7 @@ console.log("Nisi lerdi ako nemas gicu");
 - passport/passport-facebook/passport-jwt/passport-local
 - cors / helmet
 
-![](https://i.imgur.com/j3b2eyl.png)
+<!-- ![](https://i.imgur.com/j3b2eyl.png) -->
 
 # 📽 Project Arhitecture
 
@@ -77,8 +50,7 @@ console.log("Nisi lerdi ako nemas gicu");
 |   |   |   ├─ 📜 user.routes.js
 |   |   |   ├─ 📜 user.model.js
 |   |   |   ├─ 📜 user.controller.js
-|   |   |   ├─ 📜 user.service.js
-|   |   |   └─ 📜 [singleton modules, services]
+|   |   |   └─ 📜 user.service.js
 |   |   └── ...
 |   |
 |   ├─ 📜 server.js
@@ -107,17 +79,6 @@ console.log("Nisi lerdi ako nemas gicu");
 
 ## 🖥 About arhitecture
 
-- logger.js - morgan/winstong... logger configuration
-- dbconfig.js - mongo/dynamo/mysql... configuration
-- .env
-- .eslintrc.json - linter configuration
-- package.json - node project/packages configuration
-  - NODE_ENV
-  - dependecies
-  - engine
-  - scripts
-
-<br/>
 
 ### api\/\<something>
 
