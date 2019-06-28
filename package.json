@@ -1,10 +1,11 @@
 {
-  "name": "spartans-start",
+  "name": "node-startert",
   "version": "1.0.0",
-  "description": "The starter project folder for Spartans AI",
+  "description": "The starter project for Node.js projects",
   "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "nyc --reporter=html --reporter=text mocha --timeout 15000 --reporter mochawesome --exit"
   },
   "author": "Lazar Vasic",
   "license": "ISC",
@@ -12,6 +13,18 @@
     "body-parser": "^1.18.3",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-ui-express": "^4.0.6",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "mocha": "^6.1.4",
+    "nock": "^10.0.6",
+    "nyc": "^14.1.1",
+    "prettier": "^1.18.2"
   }
 }

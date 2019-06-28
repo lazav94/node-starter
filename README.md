@@ -4,7 +4,6 @@
      alt="Markdown Monster icon"
      style="align-item:center; width: 350px; maring-bottom:25px; "/>
 
-
 ## 📔 Most used Node.js modules
 
 - express
@@ -79,7 +78,6 @@
 
 ## 🖥 About arhitecture
 
-
 ### api\/\<something>
 
 - `<something>.routes.js` - routers
@@ -97,3 +95,12 @@
 */
 const functionName = [async]() => { };
 ```
+
+#### 🔥Swagger
+
+Swagger configuration is in the `server/services/swagger` folder
+All documentation will be parsed from `server/services/swagger/docs` and name must finished with .swagger.js
+
+### 📁 Logger
+
+Currently in logger.js I use winston logger

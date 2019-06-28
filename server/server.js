@@ -13,6 +13,8 @@ app.use(express.static(path.join(__dirname, "public")));
 // app.set('view engine', 'ejs');
 // app.set('views', path.join(__dirname, 'views'));
 
+app.use("/api", require("./services/swagger"));
+
 // Database configuration
 require("./services/dbconfig");
 
