@@ -10,9 +10,9 @@
   "author": "Lazar Vasic",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
+    "body-parser": "^1.20.1",
     "dotenv": "^7.0.0",
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "path": "^0.12.7",
     "swagger-jsdoc": "^3.2.9",
     "swagger-ui-express": "^4.0.6",
